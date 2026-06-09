@@ -38,7 +38,7 @@ public class FindMaxTest extends NumberAndStringHelperTest {
 
     @Test
     // negative: [] -> exception
-    public void userCannotFindMaxInNullArray() {
+    public void userCannotFindMaxInEmptyArray() {
         assertThrows(NoSuchElementException.class, () -> numberAndStringHelper.findMax(new int[0]));
     }
 }
