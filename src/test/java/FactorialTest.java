@@ -36,7 +36,7 @@ public class FactorialTest extends NumberAndStringHelperTest {
     @MethodSource("numbersToFactorial")
     public void userCanFindFactorial(int num, int factorial) {
         int countedFactorial = numberAndStringHelper.factorial(num);
-        assertEquals(countedFactorial, factorial);
+        assertEquals(factorial, countedFactorial);
     }
 
     @Test

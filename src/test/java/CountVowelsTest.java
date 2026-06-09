@@ -54,7 +54,7 @@ public class CountVowelsTest extends NumberAndStringHelperTest {
     @MethodSource("validStringsToCountVowels")
     public void userCanCountVowelsPositiveTest(String inputString, int count) {
         int countedVowels = numberAndStringHelper.countVowels(inputString);
-        assertEquals(countedVowels, count);
+        assertEquals(count, countedVowels);
     }
 
     public static Stream<Arguments> invalidStringsToCountVowels() {
@@ -79,7 +79,7 @@ public class CountVowelsTest extends NumberAndStringHelperTest {
     @MethodSource("invalidStringsToCountVowels")
     public void userCanCountVowelsNegativeTest(String inputString, int count) {
         int countedVowels = numberAndStringHelper.countVowels(inputString);
-        assertEquals(countedVowels, count);
+        assertEquals(count, countedVowels);
     }
 
     @Test

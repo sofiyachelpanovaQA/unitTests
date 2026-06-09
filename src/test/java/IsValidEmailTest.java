@@ -26,6 +26,8 @@ public class IsValidEmailTest extends NumberAndStringHelperTest {
     *   user@test
     *   user@test.r
     *
+    *   null
+    *
      */
 
     @ParameterizedTest
@@ -60,5 +62,10 @@ public class IsValidEmailTest extends NumberAndStringHelperTest {
         assertFalse(numberAndStringHelper.isValidEmail(email));
     }
 
+    //negative 'null'
+    @Test
+    public void userCannotCreateNullEmail() {
+        assertFalse(numberAndStringHelper.isValidEmail(null));
+    }
 
 }
