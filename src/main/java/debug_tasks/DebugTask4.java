@@ -2,7 +2,11 @@ package debug_tasks;
 
 public class DebugTask4 {
     public static void main(String[] args) {
-        System.out.println(isPalindrome("string"));
+        try {
+            System.out.println(isPalindrome(null));
+        } catch (NullPointerException e) {
+            System.out.println("Строка не должна быть пустой");
+        }
     }
     public static boolean isPalindrome(String str) {
         String reversed = new StringBuilder(str).reverse().toString();
