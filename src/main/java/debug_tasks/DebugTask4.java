@@ -3,7 +3,7 @@ package debug_tasks;
 public class DebugTask4 {
     public static void main(String[] args) {
         try {
-            System.out.println(isPalindrome(null));
+            System.out.println(isPalindrome("aba"));
         } catch (NullPointerException e) {
             System.out.println("Строка не должна быть пустой");
         }
